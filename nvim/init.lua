@@ -215,6 +215,12 @@ vim.keymap.set('n', '<A-0>', '<Cmd>BufferLast<CR>', { noremap = true, silent = t
 
 vim.keymap.set('n', '<leader>ve', '<Cmd>Ex<CR>', { noremap = true, silent = true, desc = '[V]im [E]xplore' })
 
+-- SPLI
+
+vim.keymap.set('n', '<leader>vs', '<Cmd>vsplit<CR>', { noremap = true, silent = true, desc = '[V]im [S]plit' })
+vim.keymap.set('n', '<leader>vh', '<Cmd>split<CR>', { noremap = true, silent = true, desc = '[V]im [H]orizontal Split' })
+vim.keymap.set('n', '<leader>vc', '<Cmd>close<CR>', { noremap = true, silent = true, desc = '[V]im [C]lose Split' })
+
 -- [[ Basic Autocommands ]]
 --  See `:help lua-guide-autocommands`
 
