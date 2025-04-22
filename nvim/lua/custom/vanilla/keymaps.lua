@@ -55,9 +55,12 @@ vim.keymap.set('n', '<leader>ve', '<Cmd>Ex<CR>', { noremap = true, silent = true
 
 -- SPLIT
 
-vim.keymap.set('n', '<leader>vs', '<Cmd>vsplit<CR>', { noremap = true, silent = true, desc = '[V]im [S]plit' })
-vim.keymap.set('n', '<leader>vh', '<Cmd>split<CR>', { noremap = true, silent = true, desc = '[V]im [H]orizontal Split' })
-vim.keymap.set('n', '<leader>vc', '<Cmd>close<CR>', { noremap = true, silent = true, desc = '[V]im [C]lose Split' })
+-- A buffer is a file or a succession of text (just a fancy way of saying that a buffer is text on the screen)
+-- A window is a viewport or a view that shows a buffer. You can have multiple windows showing the same buffer (since you can view the same file from multiple views)
+-- A tab is a collection of windows
+vim.keymap.set('n', '<leader>|', '<Cmd>vsplit<CR>', { noremap = true, silent = true, desc = 'Vertical Split' })
+vim.keymap.set('n', '<leader>\\', '<Cmd>split<CR>', { noremap = true, silent = true, desc = 'Horizontal Split' })
+vim.keymap.set('n', '<leader>wc', '<Cmd>close<CR>', { noremap = true, silent = true, desc = '[W]indow [C]lose' })
 
 -- MOVEMENT
 
@@ -66,8 +69,12 @@ vim.keymap.set('n', '<C-d>', '<C-d>zz', { noremap = true, silent = true, desc = 
 
 -- PASTE AND REPLACE
 
-vim.keymap.set('n', '<leader>p', '"_dP')
-vim.keymap.set('v', '<leader>p', '"_dP')
+vim.keymap.set('n', '<leader>p', '"_dP', { noremap = true, silent = true, desc = 'Move up and center' })
+vim.keymap.set('v', '<leader>p', '"_dP', { noremap = true, silent = true, desc = 'Move up and center' })
+
+-- YANK TO GENERAL CLIPBOARD
+-- NOTE: this only works using tmux, since nvim uses tmux clipboard (idk why, I guess something related to kickstart)
+vim.keymap.set('n', '<leader>y', '"+y', { noremap = true, silent = true, desc = 'Move up and center' })
 
 -- [[ Basic Autocommands ]]
 --  See `:help lua-guide-autocommands`
