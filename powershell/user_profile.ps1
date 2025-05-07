@@ -32,6 +32,7 @@ Set-Alias -Name v -Value nvim
 Set-Alias ll ls
 Set-Alias g git
 Function ga {git add @Args}
+Function gs {git status}
 Function gcmsg {git commit -m @Args}
 Function gp {git push @Args}
 Function e {explorer.exe @Args}
