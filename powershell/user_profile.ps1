@@ -1,3 +1,10 @@
+# Install-Module posh-git -Scope CurrentUser -Force
+# Install-Module oh-my-posh -Scope CurrentUser -Force
+# Install-Module -Name Terminal-Icons -Repository PSGallery -Force
+# Install-Module -Name z -Force
+# Install-Module -Name PSReadLine -AllowPrerelease -Scope CurrentUser -Force -SkipPublisherCheck
+# Install-Module -Name PSFzf -Scope CurrentUser -Force
+
 # set PowerShell to UTF-8
 [console]::InputEncoding = [console]::OutputEncoding = New-Object System.Text.UTF8Encoding
 
@@ -27,6 +34,7 @@ Set-Alias g git
 Function ga {git add @Args}
 Function gcmsg {git commit -m @Args}
 Function gp {git push @Args}
+Function e {explorer.exe @Args}
 Set-Alias grep findstr
 
 # Utilities
