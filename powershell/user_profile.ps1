@@ -18,7 +18,7 @@ Set-PSReadLineOption -EditMode Emacs
 Set-PSReadLineOption -BellStyle None
 Set-PSReadLineKeyHandler -Chord 'Ctrl+d' -Function DeleteChar
 Set-PSReadLineOption -PredictionSource History
-Set-PSReadLineOption -PredictionView List 
+Set-PSReadLineKeyHandler -Key Tab -Function AcceptSuggestion
 
 # Fzf
 Import-Module PSFzf
