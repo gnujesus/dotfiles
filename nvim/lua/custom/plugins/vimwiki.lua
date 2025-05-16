@@ -3,9 +3,9 @@ local os_name = vim.loop.os_uname().sysname
 local wikiPath
 
 if os_name == 'Linux' then
-  wikiPath = '~/gnu/personal/vimwiki'
+  wikiPath = '/mnt/c/Users/jotam/Nextcloud/vimwiki'
 else
-  wikiPath = 'C:/Users/juan.martinezd/personal/vimwiki'
+  wikiPath = 'C:/Users/juan.martinezd/Nextcloud/vimwiki'
 end
 
 return {
