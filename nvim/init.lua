@@ -87,9 +87,9 @@ P.S. You can delete this when you're done too. It's your config now! :)
 
 --  NOTE: Vanilla config must happen before plugins are loaded (otherwise wrong leader will be used)
 
-local uname = vim.loop.os_uname()
-
-print(uname.sysname)
+-- NOTE: print sysname
+-- local uname = vim.loop.os_uname()
+-- print(uname.sysname)
 
 require 'custom.vanilla.config'
 
