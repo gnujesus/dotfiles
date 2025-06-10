@@ -534,15 +534,49 @@ require('lazy').setup({
     end,
   },
 
-  {
-    'n1ghtmare/noirblaze-vim',
-    priority = 1000, -- Make sure to load this before all the other start plugins.
-    init = function()
-      vim.cmd.colorscheme 'noirblaze'
-    end,
-  },
+  -- {
+  --   'n1ghtmare/noirblaze-vim',
+  --   priority = 1000, -- Make sure to load this before all the other start plugins.
+  --   init = function()
+  --     vim.cmd.colorscheme 'noirblaze'
+  --   end,
+  -- },
 
-  -- { -- You can easily change to a different colorscheme.
+  -- {
+  --   'nyoom-engineering/oxocarbon.nvim',
+  --   lazy = false,
+  --   priority = 1000,
+  --   init = function()
+  --     vim.cmd.colorscheme 'oxocarbon'
+  --   end,
+  -- },
+
+  -- {
+  --   'zenbones-theme/zenbones.nvim',
+  --   -- Optionally install Lush. Allows for more configuration or extending the colorscheme
+  --   -- If you don't want to install lush, make sure to set g:zenbones_compat = 1
+  --   -- In Vim, compat mode is turned on as Lush only works in Neovim.
+  --
+  --   dependencies = 'rktjmp/lush.nvim',
+  --   lazy = false,
+  --   priority = 1000,
+  --   -- you can set set configuration options here
+  --   -- config = function()
+  --   --
+  --   --     vim.g.zenbones_darken_comments = 45
+  --   --
+  --   init = function()
+  --     -- Load the colorscheme here.
+  --     -- Like many other themes, this one has different styles, and you could load
+  --     -- any other, such as 'tokyonight-storm', 'tokyonight-moon', or 'tokyonight-day'.
+  --     vim.cmd.colorscheme 'zenwritten'
+  --     -- You can configure highlights by doing something like:
+  --     vim.cmd.hi 'Comment gui=none'
+  --   end,
+  --   -- end
+  -- },
+
+  -- { -- You can easily change to a :different colorscheme.
   --   -- Change the name of the colorscheme plugin below, and then
   --   -- change the command in the config to whatever the name of that colorscheme is.
   --   --
@@ -554,7 +588,6 @@ require('lazy').setup({
   --     -- Like many other themes, this one has different styles, and you could load
   --     -- any other, such as 'tokyonight-storm', 'tokyonight-moon', or 'tokyonight-day'.
   --     vim.cmd.colorscheme 'tokyonight-night'
-  --
   --     -- You can configure highlights by doing something like:
   --     vim.cmd.hi 'Comment gui=none'
   --   end,

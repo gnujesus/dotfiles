@@ -111,6 +111,8 @@ alias idea="idea64.exe"
 alias e="explorer.exe"
 alias l="ls -list"
 
+alias gr="go run"
+
 # Remove C-l bind to clear terminal. I don't like it
 bindkey -r '^L'
 
@@ -134,6 +136,7 @@ export PATH=$PATH:/mnt/c/Users/jotam/AppData/Local/Android/Sdk/platform-tools
 
 export WHOME="/mnt/c/Users/jotam"
 
+export PATH=$PATH:/usr/local/go/bin
 
 # pnpm
 export PNPM_HOME="/home/gnu/.local/share/pnpm"
