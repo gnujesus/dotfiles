@@ -11,9 +11,9 @@ return {
   opts = {
     preset = 'miami-nights',
     colors = {
-      background = '#0c0c0c',
-      primary = '#8cd867',
-      secondary = '#ea526f',
+      background = '#131515',
+      primary = '#adf7b6',
+      secondary = '#fffd82',
     },
     stles = {
       italic = true,
