@@ -10,11 +10,11 @@ return {
   },
   opts = {
     preset = 'miami-nights',
-    colors = {
-      background = '#131515',
-      primary = '#adf7b6',
-      secondary = '#fffd82',
-    },
+    -- colors = {
+    --   background = '#131515',
+    --   primary = '#adf7b6',
+    --   secondary = '#FF56AB',
+    -- },
     stles = {
       italic = true,
       bold = false,

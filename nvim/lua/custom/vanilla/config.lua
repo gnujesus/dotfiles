@@ -72,3 +72,8 @@ vim.opt.scrolloff = 10
 
 -- Termgui
 vim.opt.termguicolors = true
+
+-- Wrap
+vim.opt.wrap = false
+
+vim.opt.colorcolumn = '80'
