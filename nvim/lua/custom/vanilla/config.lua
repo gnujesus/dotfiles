@@ -77,3 +77,6 @@ vim.opt.termguicolors = true
 vim.opt.wrap = false
 
 vim.opt.colorcolumn = '80'
+
+-- Buffer switching without having to save on every buffer you're in
+vim.opt.hidden = true
