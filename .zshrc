@@ -8,7 +8,7 @@ export ZSH="$HOME/.oh-my-zsh"
 # load a random theme each time Oh My Zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="amuse"
+ZSH_THEME="ys"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -113,6 +113,8 @@ alias l="ls -list"
 alias gs="git status"
 
 alias gr="go run"
+
+alias "py3.14"="source ~/.venv3.14/bin/activate"
 
 # Remove C-l bind to clear terminal. I don't like it
 bindkey -r '^L'
