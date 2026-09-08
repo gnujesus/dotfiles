@@ -116,6 +116,8 @@ alias gr="go run"
 
 alias "py3.14"="source ~/.venv3.14/bin/activate"
 
+alias ag="agy"
+
 # Remove C-l bind to clear terminal. I don't like it
 bindkey -r '^L'
 
@@ -151,3 +153,8 @@ esac
 
 # opencode
 export PATH=/home/gnu/.opencode/bin:$PATH
+
+export NVM_DIR="$HOME/.config/nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
+
